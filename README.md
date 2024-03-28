@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @ayoub-el-hadioui
-- 👀 I’m interested in DevOps 
-- 🌱 I’m currently learning docker and other devops tools
+- 👀 I’m interested in CyberSecurity  
+- 🌱 I’m currently learning SOC and other CyberSecurity tools
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me LinkedIn.com/in/ayoub-el-hadioui
 
