@@ -1,0 +1,68 @@
+<!doctype html>
+    <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Ayoub El Hadioui — Network & Security Engineer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+    <style>
+/* (same CSS as earlier, abbreviated here for brevity in this cell) */
+    :root{--bg:#0b1220;--bg-soft:#0e1628;--panel:#101a30;--card:#111f38;--muted:#8ea3b9;--fg:#e6f1ff;--accent:#00ffc6;--accent-2:#24a1ff;--shadow:0 10px 30px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,'Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji'}
+    img{max-width:100%;display:block}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:1000;background:linear-gradient(180deg,#0b1220,rgba(11,18,32,.8));backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}.brand{display:flex;gap:12px;align-items:center}.brand .logo{width:28px;height:28px}.brand h1{font-size:1rem;margin:0;letter-spacing:.5px}
+    .nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}.nav a{font-weight:600;color:#cfe5ff}.nav a:hover{color:var(--fg)}
+    .lang-toggle{border:1px solid rgba(255,255,255,.12);background:var(--bg-soft);color:var(--fg);padding:6px 10px;border-radius:8px;cursor:pointer}
+    .hero{padding:56px 0 24px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+    .terminal{background:radial-gradient(1200px 600px at -10% -10%, rgba(36,161,255,.25), transparent 40%),radial-gradient(1200px 800px at 110% 110%, rgba(0,255,198,.2), transparent 45%),var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:14px;box-shadow:var(--shadow);padding:16px}
+    .bar{display:flex;gap:8px;align-items:center;padding:4px 8px}.dot{width:10px;height:10px;border-radius:50%;background:#2c3b55}.dot.r{background:#ff5f56}.dot.y{background:#ffbd2e}.dot.g{background:#27c93f}
+    .term-body{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);padding:12px 10px;border-radius:10px;min-height:210px}
+    .line{display:flex;gap:8px;align-items:flex-start}.prompt{color:#7ef3ff}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.badge{border:1px dashed rgba(255,255,255,.18);padding:6px 10px;border-radius:999px;font-size:.8rem;color:#cfe5ff;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent)}
+    .profile{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:14px;box-shadow:var(--shadow);padding:18px;text-align:center}
+    .profile img{width:140px;height:140px;margin:0 auto 12px;border-radius:14px;border:1px solid rgba(255,255,255,.12)}
+    .profile h2{margin:.2rem 0 .3rem;font-size:1.4rem}.profile p{margin:.2rem 0;color:var(--muted)}
+    .btn{display:inline-flex;gap:8px;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));color:var(--fg);font-weight:600;cursor:pointer;text-decoration:none}
+    .btn:hover{background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04))}
+    section{padding:40px 0;border-top:1px solid rgba(255,255,255,.06)}section h3{margin:0 0 14px;font-size:1.2rem;letter-spacing:.5px;text-transform:uppercase;color:#d6e7ff}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 12;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px}
+    .kv{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.kv .pill{font-size:.8rem;border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;color:#cfe5ff}
+    .timeline{display:grid;gap:14px}.timeline .item{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.repo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+    .repo{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px}.repo .name{font-weight:700;margin-bottom:4px}.repo .desc{color:#cfe5ff;font-size:.9rem}
+    .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.cert{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px}.cert .issuer{color:#9db2cc}
+    .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.c{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px}
+    footer{padding:22px 0;color:#9db2cc;text-align:center}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;gap:18px}}
+    
+</style></head>
+    <body><header><div class="container nav">
+      <div class="brand"><img class="logo" src="assets/favicon.svg" alt="AEH logo"/><h1>Ayoub&nbsp;El&nbsp;Hadioui</h1></div>
+      <nav><ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+      <button id="lang-toggle" class="lang-toggle" title="EN/FR">EN</button></div></header>
+      <main class="container">
+        <section class="hero">
+          <div class="terminal"><div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><strong>Blue‑Team style portfolio</strong></div>
+            <div id="term-body" class="term-body"><div class="line"><span class="prompt">$</span><span class="text">[SIEM] Graylog stream 'web-traffic' active on AWS VPC.</span></div><div class="line"><span class="prompt">$</span><span class="text">[IDS] Suricata: Suspicious payload flagged on pfSense WAN.</span></div><div class="line"><span class="prompt">$</span><span class="text">[SOAR] Shuffle executed playbook: auto-isolate endpoint via MISP IOC.</span></div><div class="line"><span class="prompt">$</span><span class="text">[SOC] TheHive case #TH-3021 opened (SQLi, Apache/PHP demo app).</span></div><div class="line"><span class="prompt">$</span><span class="text">[AD] Kerberoasting simulation detected and contained.</span></div><div class="line"><span class="prompt">$</span><span class="text">[VPN] Site-to-Site IPSec tunnel negotiated (Cisco &lt;-&gt; FortiGate).</span></div></div>
+            <div class="badges"><span class="badge">SIEM</span><span class="badge">SOAR</span><span class="badge">Suricata</span><span class="badge">AWS</span><span class="badge">Cisco/FortiGate</span><span class="badge">AD</span></div></div>
+          <aside class="profile"><img src="assets/img/profile.svg" alt="Portrait of Ayoub El Hadioui"/>
+            <h2>Ayoub El Hadioui</h2><p>Network & Security Engineer — SOC • SIEM • SOAR</p>
+            <div class="actions">
+              <a class="btn" href="assets/Ayoub-El-Hadioui-CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+              <a class="btn" href="assets/ayoub-el-hadioui.vcf">Save Contact (vCard)</a>
+              <a class="btn" href="https://github.com/ayoub-el-hadioui" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/el-hadioui-ayoub/" target="_blank" rel="noopener">LinkedIn</a>
+            </div></aside>
+        </section>
+        <section id="about"><h3>About</h3><div class="grid"><article class="card"><p><strong>Threat detection, response, and secure infrastructure.</strong></p>
+        <p>I am a Network & Security Engineer specialized in SOC operations, SIEM/SOAR engineering, and secure infrastructure.</p>
+        <div class="kv"><span class="pill">Location: Morocco</span><span class="pill">Email: ayoub.hadioui02@gmail.com</span><span class="pill">Phone: +212 766 40 41 77</span><span class="pill">Languages: Arabic • French • English</span></div></article></div></section>
+        <section id="skills"><h3>Skills</h3><div class="grid"><div class="card"><h4>Networking & Security</h4><div class="kv"><span class="pill">TCP/IP</span><span class="pill">DNS</span><span class="pill">VPN</span><span class="pill">Cisco</span><span class="pill">FortiGate</span><span class="pill">pfSense</span><span class="pill">Suricata</span></div></div>
+        <div class="card"><h4>SIEM & SOAR</h4><div class="kv"><span class="pill">Graylog</span><span class="pill">ELK</span><span class="pill">Splunk</span><span class="pill">Wazuh</span><span class="pill">TheHive</span><span class="pill">Cortex</span><span class="pill">MISP</span><span class="pill">Shuffle</span></div></div></div></section>
+        <section id="experience"><h3>Experience</h3><div class="timeline"><div class="item"><div class="when">Nov 2024 – Jul 2025</div><div class="where">ITDESKTOP (Client: Cipla Maroc) — Administrator Networks & Security</div></div>
+        <div class="item"><div class="when">Jan 2024 – Jul 2024</div><div class="where">Devoteam — Cybersecurity Engineer (PFE Internship)</div></div>
+        <div class="item"><div class="when">Jul 2023 – Aug 2023</div><div class="where">RESI‑TECH — Web Development (PFA Internship)</div></div></div></section>
+        <section id="projects"><h3>Projects</h3><div class="projects"><div class="proj"><h4>Site‑to‑Site VPN — Cisco ZBF ↔ FortiGate (2025)</h4><p>Lab simulating secure inter‑site connectivity.</p></div></div><h4 style="margin-top:18px">Latest from GitHub</h4><div id="repo-grid" class="repo-grid"><div class="repo"><div class="name">graylog-siem-lab</div><div class="desc">Pipelines and dashboards for a Graylog SIEM demo.</div></div></div></section>
+        <section id="certs"><h3>Certifications</h3><div class="cert-grid"><div class="cert"><h4>Fortinet NSE 1 & 2</h4><div class="issuer">Fortinet</div></div></div></section>
+        <section id="contact"><h3>Contact</h3><div class="contact"><div class="c"><h4>Email</h4><p><a href="mailto:ayoub.hadioui02@gmail.com">ayoub.hadioui02@gmail.com</a></p></div><div class="c"><h4>Phone</h4><p><a href="tel:+212766404177">+212 766 40 41 77</a></p></div><div class="c"><h4>LinkedIn</h4><p><a href="https://www.linkedin.com/in/el-hadioui-ayoub/" target="_blank" rel="noopener">linkedin.com/in/el-hadioui-ayoub</a></p></div><div class="c"><h4>GitHub</h4><p><a href="https://github.com/ayoub-el-hadioui" target="_blank" rel="noopener">github.com/ayoub-el-hadioui</a></p></div></div></section>
+      </main><footer><div class="container"><small>© <span id="year">2025</span> Ayoub El Hadioui — Built with a Blue‑Team theme.</small></div></footer>
+    </body></html>
